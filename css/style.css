@@ -1,0 +1,698 @@
+/* Link Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bs-primary-black: #000000;
+    --bs-primary-white: #ffffff;
+    --bs-primary-grey: #aaaaaa;
+    --bs-primary-orange: #f77f00;
+
+    --bs-text-black: #000000;
+    --bs-text-white: #ffffff;
+    --bs-text-grey: #aaaaaa;
+    --bs-text-orange: #f77f00;
+    --bs-text-yellow: #ffc107;
+}
+
+body{
+    background: var(--bs-primary-white);
+}
+
+/* NAVBAR */
+#open-btn{
+    color: var(--bs-text-white);
+    font-size: 2rem;
+    display: none;
+}
+
+.menu-hamburger{
+    position: absolute;
+    top: 0;
+    right: -500px;
+    transition: all 0.4s ease-in-out;
+    display: none;
+}
+
+.nav-bar{
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    padding: 20px 0;
+    z-index: 999;
+    transition: all 0.3s ease-in;
+}
+
+.logo {
+    width: 200px;
+}
+
+.menu-nav a{
+    color: var(--bs-text-white);
+}
+
+.menu-nav a:hover{
+    color: var(--bs-text-grey);
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-menu .dropdown-item {
+    color: var(--bs-text-white); 
+    background-color: var(--bs-primary-black);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: var(--bs-text-black); 
+    background-color: var(--bs-primary-white); 
+}
+
+.media-nav > a{
+    color: var(--bs-text-white);
+    margin: 0px 12px;
+}
+
+.media-nav > a > i{
+    /* display: inline-flex; */
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.media-nav a:hover i{
+    background: var(--bs-primary-white);
+    color: var(--bs-text-black);
+    padding: 5px;
+    transition: all 0.4s ease-in-out;
+}
+/* END NAVBAR */
+
+/* HERO SECTION */
+.hero-section{
+    width: 100%;
+    height: auto;
+}
+
+.second-background{
+    width: 100%;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.747);
+    position: relative;
+}
+
+.hero-description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-description > h1{
+    color: var(--bs-text-white);
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.hero-description > h1 span{
+    color: var(--bs-text-orange);
+}
+
+.hero-description > span{
+    color: var(--bs-text-white);
+    width: 75%;
+}
+
+#demo{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+}
+
+.carousel-item > img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+/* END HERO SECTION */
+
+
+/* About Us */
+.about-us{
+    height: 80vh;
+}
+
+.image-about img{
+    box-shadow: -20px 15px 0px var(--bs-primary-black);
+}
+
+.description-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.description-about > p{
+    font-size: 1.1rem;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.description-about > p .hidden-desktop{
+    display: none;
+    visibility: hidden;
+}
+
+.description-about > a{
+    margin-top: 2rem;
+}
+/* END About Us */
+
+/* Daftar Destinasi */
+.header-destination > span{
+    font-family: 'Dancing Script',serif;
+    color: var(--bs-text-orange);
+}
+
+.destination-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.card-destination{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-destination > img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.destination-item:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.destination-item:hover .destination-text > span{
+    background: var(--bs-primary-white);
+    transition: all 0.3s ease-in-out;
+    padding: 3px 7px;
+    border-radius: 3px;
+    text-shadow: none;
+}
+
+.destination-text{
+    position: absolute;
+    bottom: 1rem;
+    left: 2.4rem;
+}
+
+.destination-text > span {
+    font-family: 'Dancing Script',serif;
+    color: var(--bs-text-yellow);
+    font-size: 1.5rem;
+    text-shadow: 2px 3px 4px var(--bs-text-black);
+    transition: all 0.3s ease-in-out;
+}
+
+.destination-text > h5{
+    color: var(--bs-text-white);
+    font-size: 1.7rem;
+    text-shadow: 2px 3px 4px var(--bs-text-black);
+}
+
+#btn-destination{
+    margin-top: 40px;
+}
+/* END Daftar Destinasi */
+
+/* Paket Tour Pilihan */
+.header-package-tour > span{
+    font-family: 'Dancing Script',serif;
+    color: var(--bs-text-orange);
+}
+
+.card{
+    overflow: hidden;
+}
+
+.package-tour-image{
+    overflow: hidden;
+}
+
+.package-tour-image img{
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover .package-tour-image img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.package-info{
+    align-items: end;
+}
+
+.package-rating{
+    display: flex;
+    flex-direction: column;
+}
+/* END Paket Tour Pilihan */
+
+/* Testimonials */
+.testimonials{
+    height: 100vh;
+    background-image: url(../img/backgroundgunung.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#container-testimonials{
+    width: 60%;
+}
+
+.header-testimonials > span{
+    font-family: 'Dancing Script',serif;
+    color: var(--bs-text-orange);
+}
+
+.testimonials-item img{
+    max-width: 80px;
+}
+
+#swiper-slides{
+    padding: 40px;
+}
+/* END Testimonials */
+
+/* Gallery */
+.header-gallery > span{
+    font-family: 'Dancing Script',serif;
+    color: var(--bs-text-orange);
+}
+
+.gallery-image{
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.gallery-image img{
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.gallery-item:hover .gallery-image img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.gallery-image > .see-more{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: var(--bs-text-white);
+    display: none;
+}
+
+.gallery-item:hover .see-more{
+    display: block;
+}
+/* END Gallery */
+
+/* Media Partner */
+.logo-partners img{
+    filter: grayscale(100%);
+    transition: grayscale 0.3s ease-in-out;
+}
+
+.logo-partners:hover img{
+    filter: grayscale(0%);
+    transition: grayscale 0.3s ease-in-out;
+    cursor: pointer;
+}
+/* END Media Partner */
+
+/* Intro Section */
+.intro-section{
+    margin: 4rem 0;
+}
+
+.container-intro-section{
+    background-image: url(../img/backgroundgunung.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container-intro-section > h1,
+.container-intro-section > p{
+    width: 45%;
+}
+
+.container-intro-section > a{
+    font-size: 1.3rem;
+}
+/* Intro Section */
+
+/* Footer */
+.list-unstyled li a{
+    color: var(--bs-text-white);
+}
+
+.list-unstyled li a:hover{
+    color: var(--bs-text-grey);
+}
+/* END Footer */
+
+@media (min-width: 992px) {
+    .description-about .hidden-desktop {
+        display: block;
+        visibility: visible;
+    }
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 991px) and (min-width: 768px) {
+    /* NAVBAR */
+    #open-btn{
+        display: block;
+    }
+
+    .menu-hamburger{
+        display: block;
+        width: 40%;
+    }
+
+    .menu-nav a,
+    .media-nav a{
+        display: none;
+    }
+    /* END NAVBAR */
+
+    /* Hero Section */
+    .hero-description{
+        width: 60%;
+    }
+
+    .hero-description > h1,
+    .hero-description > span{
+        width: 100%;
+    }
+    /* END Hero Section */
+
+    /* About Us */
+    .about-us{
+        height: auto;
+    }
+
+    .image-about img{
+        width: 90%;
+        margin-bottom: 3rem;
+        box-shadow: -20px 15px 0px var(--bs-primary-black);
+    }
+
+    .description-about{
+        align-items: center;
+    }
+
+    .description-about > h2{
+        width: 90%;
+        text-align: center;
+    }
+
+    .description-about > p{
+        text-align: justify;
+    }
+
+    .description-about > a{
+        margin-top: 0rem;
+    }
+
+    .description-about > p.hidden-desktop{
+        display: none;
+    }
+    /* END About Us */
+
+    /* Package Tour */
+    .package-info{
+        display: flex;
+        align-items: end;
+    }
+
+    .package-rating{
+        flex-direction: column;
+    }
+
+    .discont-expiry{
+        font-size: 0.9rem;
+    }
+    /* END Package Tour */
+
+    /* Testimonials */
+    .testimonials{
+        background-position-x: -750px;
+    }
+
+    #container-testimonials{
+        width: 90%;
+    }
+    /* END Testimonials */
+
+    /* Intro Section */
+    .container-intro-section{
+        background-position-x: -650px;
+    }
+
+    .container-intro-section > h1,
+    .container-intro-section > p{
+        width: 80%;
+    }
+    /* END Intro Section */
+
+    /* Footer */
+    #newsletter{
+        margin-top: 60px;
+    }
+    /* END Footer */
+}
+/* END TABLET */
+
+/* HandPhone */
+@media screen and (max-width: 767px) {
+    /* NAVBAR */
+    #open-btn{
+        display: block;
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+
+    #close-btn{
+        font-size: 1.5rem;
+    }
+
+    .menu-hamburger{
+        display: block;
+        width: 100%;
+    }
+
+    .logo {
+        width: 140px;
+        margin-left: 5px;
+    }
+
+    .menu-nav a,
+    .media-nav a{
+        display: none;
+    }
+    /* END NAVBAR */
+
+    /* Hero Section */
+    .hero-description{
+        width: 100%;
+    }
+
+    .hero-description > h1{
+        width: 80%;
+        font-size: 1.4rem;
+    }
+
+    .hero-description > span{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .hero-description > a{
+        font-size: 0.8rem;
+    }
+    /* END Hero Section */
+
+    /* About Us */
+    .about-us{
+        height: auto;
+    }
+
+    .image-about img{
+        width: 90%;
+        margin-bottom: 3rem;
+        box-shadow: -20px 15px 0px var(--bs-primary-black);
+    }
+
+    .description-about{
+        align-items: center;
+    }
+
+    .description-about > h2{
+        width: 90%;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .description-about > p{
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    .description-about > p.hidden-desktop{
+        display: none;
+    }
+
+    .description-about > a{
+        margin-top: 0rem;
+        font-size: 0.9rem;
+    }
+    /* END About Us */
+
+    /* Destination */
+    .header-destination > h2{
+        font-size: 1.4rem;
+    }
+
+    #btn-destination{
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+    /* END Destination */
+
+    /* Package Tour */
+    .header-package-tour > h2{
+        font-size: 1.4rem;
+    }
+
+    .package-info{
+        display: flex;
+        align-items: end;
+    }
+
+    .package-rating{
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .discont-expiry{
+        width: 50%;
+        font-size: 0.9rem;
+    }
+    /* END Package Tour */
+
+    /* Testimonials */
+    .testimonials{
+        background-position-x: -750px;
+        padding-top: 70px;
+    }
+
+    #container-testimonials{
+        width: 100%;
+    }
+
+    #swiper-slides{
+        padding: 20px;
+    }
+
+    #swiper-slides > p{
+        font-size: 0.8rem;
+    }
+
+    .text-box > h4{
+        font-size: 1.1rem;
+    }
+    /* END Testimonials */
+
+    /* Gallery */
+    .header-gallery > h2{
+        font-size: 1.4rem;
+    }
+    /* END Gallery */
+
+    /* Intro Section */
+
+    .container-intro-section > h1{
+        width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .container-intro-section > h1 > span{
+        font-size: 1.4rem;
+    }
+
+    .container-intro-section > p{
+        width: 90%;
+    }
+
+    .container-intro-section a{
+        font-size: 0.9rem;
+    }
+    /* END Intro Section */
+
+    /* Media Partner */
+    .header-media-partners > h2{
+        font-size: 1.4rem;
+    }
+    /* END Media Partner */
+}
+/* END HandPhone */
