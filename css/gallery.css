@@ -145,77 +145,54 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.hero-text > h2{
+    width: 40%;
+}
 /* END HERO SECTION */
 
-/* Daftar Destinasi */
-.header-destination > span{
+/* Paket Tur */
+.gallery{
+    height: auto;
+}
+
+.header-gallery > span{
     font-family: 'Dancing Script',serif;
     color: var(--bs-text-orange);
 }
 
-.destination-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px; 
+.gallery-image{
     overflow: hidden;
+    border-radius: 5px;
     position: relative;
 }
 
-.card-destination{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.card-destination > img {
-    object-fit: cover;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
+.gallery-image img{
     transition: all 0.3s ease-in-out;
+    opacity: 0.8;
 }
 
-.destination-item:hover img{
+.gallery-item:hover .gallery-image img{
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+    opacity: 1;
     cursor: pointer;
 }
 
-.destination-item:hover .destination-text > span{
-    background: var(--bs-primary-white);
-    transition: all 0.3s ease-in-out;
-    padding: 3px 7px;
-    border-radius: 3px;
-    text-shadow: none;
-}
-
-.destination-text{
+.gallery-image > .see-more{
     position: absolute;
-    bottom: 1rem;
-    left: 2.4rem;
-}
-
-.destination-text > span {
-    font-family: 'Dancing Script',serif;
-    color: var(--bs-text-yellow);
-    font-size: 1.5rem;
-    text-shadow: 2px 3px 4px var(--bs-text-black);
-    transition: all 0.3s ease-in-out;
-}
-
-.destination-text > h5{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
     color: var(--bs-text-white);
-    font-size: 1.7rem;
-    text-shadow: 2px 3px 4px var(--bs-text-black);
+    display: none;
 }
 
-#btn-destination{
-    margin-top: 40px;
+.gallery-item:hover .see-more{
+    display: block;
 }
-/* END Daftar Destinasi */
+/* END Paket Tur */
 
 /* Footer */
 .list-unstyled li a{
@@ -251,6 +228,12 @@ body{
         background-image: none;
     }
     /* END Hero Section */
+
+    /* Gallery */
+    .hero-text > h2{
+        width: 70%;
+    }
+    /* END Gallery */
 
     /* Footer */
     #newsletter{
@@ -303,14 +286,14 @@ body{
     }
     /* END Hero Section */
 
-    /* Destination */
-    .header-destination > h2{
-        font-size: 1.4rem;
+    /* Gallery */
+    .hero-text > h2{
+        width: 80%;
+        font-size: 1.1rem;
     }
-    /* END Destination */
+    /* END Gallery */
 
     /* Footer */
-
     #sosial-media-footer{
         margin: 20px 0;
     }
