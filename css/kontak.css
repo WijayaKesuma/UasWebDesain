@@ -145,77 +145,37 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.hero-text > h2{
+    width: 40%;
+}
 /* END HERO SECTION */
 
-/* Daftar Destinasi */
-.header-destination > span{
-    font-family: 'Dancing Script',serif;
-    color: var(--bs-text-orange);
+/* Contact Us */
+.contact-us{
+    height: auto;
 }
 
-.destination-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px; 
-    overflow: hidden;
-    position: relative;
+input:hover, textarea:hover, select:hover {
+    border-color: #f77f00; 
+    box-shadow: 0 0 5px rgba(247, 127, 0, 0.5);
 }
 
-.card-destination{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
+input:focus, textarea:focus, select:focus {
+    border-color: #f77f00;
+    box-shadow: 0 0 5px rgba(247, 127, 0, 0.8);
+    outline: none; 
 }
 
-.card-destination > img {
-    object-fit: cover;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    transition: all 0.3s ease-in-out;
+input[type="checkbox"]:hover {
+    accent-color: #f77f00; 
 }
 
-.destination-item:hover img{
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+input[type="checkbox"]:checked {
+    accent-color: #f77f00; 
 }
 
-.destination-item:hover .destination-text > span{
-    background: var(--bs-primary-white);
-    transition: all 0.3s ease-in-out;
-    padding: 3px 7px;
-    border-radius: 3px;
-    text-shadow: none;
-}
-
-.destination-text{
-    position: absolute;
-    bottom: 1rem;
-    left: 2.4rem;
-}
-
-.destination-text > span {
-    font-family: 'Dancing Script',serif;
-    color: var(--bs-text-yellow);
-    font-size: 1.5rem;
-    text-shadow: 2px 3px 4px var(--bs-text-black);
-    transition: all 0.3s ease-in-out;
-}
-
-.destination-text > h5{
-    color: var(--bs-text-white);
-    font-size: 1.7rem;
-    text-shadow: 2px 3px 4px var(--bs-text-black);
-}
-
-#btn-destination{
-    margin-top: 40px;
-}
-/* END Daftar Destinasi */
+/* END Contact Us */
 
 /* Footer */
 .list-unstyled li a{
@@ -303,10 +263,11 @@ body{
     }
     /* END Hero Section */
 
-    /* Destination */
-    .header-destination > h2{
-        font-size: 1.4rem;
+    /* Gallery */
+    .hero-text > h2{
+        width: 80%;
+        font-size: 1.1rem;
     }
-    /* END Destination */
+    /* END Gallery */
 }
 /* END HandPhone */

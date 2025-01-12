@@ -151,7 +151,7 @@ body{
 }
 /* END HERO SECTION */
 
-/* Paket Tur */
+/* Gallery */
 .gallery{
     height: auto;
 }
@@ -192,7 +192,7 @@ body{
 .gallery-item:hover .see-more{
     display: block;
 }
-/* END Paket Tur */
+/* END Gallery */
 
 /* Footer */
 .list-unstyled li a{
@@ -292,11 +292,5 @@ body{
         font-size: 1.1rem;
     }
     /* END Gallery */
-
-    /* Footer */
-    #sosial-media-footer{
-        margin: 20px 0;
-    }
-    /* END Footer */
 }
 /* END HandPhone */

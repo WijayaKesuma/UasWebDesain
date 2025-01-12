@@ -113,7 +113,7 @@ body{
 /* HERO SECTION */
 .hero-section{
     width: 100%;
-    background-image: url(../img/hero2.png);
+    background-image: url(../img/hero3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -145,77 +145,94 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.hero-text > h2{
+    width: 40%;
+}
 /* END HERO SECTION */
 
-/* Daftar Destinasi */
-.header-destination > span{
+/* About Us */
+.about-us{
+    height: auto;
+}
+
+.image-about img{
+    box-shadow: -20px 16px 0px var(--bs-primary-black);
+}
+
+.about-text > p{
+    text-indent: 15px;
+    text-align: justify;
+}
+
+/* END About Us */
+
+/* Why Choose Us */
+.container > span{
+    font-family: 'Dancing Script',serif;
+}
+
+.ctn-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px; 
+    height: 100%;
+}
+/* END Why Choose Us */
+
+/* Our Team */
+.header-team > span{
+    font-family: 'Dancing Script',serif;
+}
+/* END Our Team */
+
+/* Testimonials */
+.testimonials{
+    height: 100vh;
+    background-image: url(../img/backgroundgunung.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#container-testimonials{
+    width: 60%;
+}
+
+.header-testimonials > span{
     font-family: 'Dancing Script',serif;
     color: var(--bs-text-orange);
 }
 
-.destination-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px; 
-    overflow: hidden;
-    position: relative;
+.testimonials-item img{
+    max-width: 80px;
 }
 
-.card-destination{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
+#swiper-slides{
+    padding: 40px;
+}
+/* END Testimonials */
+
+/* Media Partner */
+.logo-partners img{
+    filter: grayscale(100%);
+    transition: grayscale 0.3s ease-in-out;
 }
 
-.card-destination > img {
-    object-fit: cover;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    transition: all 0.3s ease-in-out;
-}
-
-.destination-item:hover img{
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
+.logo-partners:hover img{
+    filter: grayscale(0%);
+    transition: grayscale 0.3s ease-in-out;
     cursor: pointer;
 }
-
-.destination-item:hover .destination-text > span{
-    background: var(--bs-primary-white);
-    transition: all 0.3s ease-in-out;
-    padding: 3px 7px;
-    border-radius: 3px;
-    text-shadow: none;
-}
-
-.destination-text{
-    position: absolute;
-    bottom: 1rem;
-    left: 2.4rem;
-}
-
-.destination-text > span {
-    font-family: 'Dancing Script',serif;
-    color: var(--bs-text-yellow);
-    font-size: 1.5rem;
-    text-shadow: 2px 3px 4px var(--bs-text-black);
-    transition: all 0.3s ease-in-out;
-}
-
-.destination-text > h5{
-    color: var(--bs-text-white);
-    font-size: 1.7rem;
-    text-shadow: 2px 3px 4px var(--bs-text-black);
-}
-
-#btn-destination{
-    margin-top: 40px;
-}
-/* END Daftar Destinasi */
+/* END Media Partner */
 
 /* Footer */
 .list-unstyled li a{
@@ -247,10 +264,25 @@ body{
     /* END NAVBAR */
 
     /* Hero Section */
+    .hero-text > h2{
+        width: 80%;
+        font-size: 1.4rem;
+    }
+
     .wave{
         background-image: none;
     }
     /* END Hero Section */
+
+    /* Testimonials */
+    .testimonials{
+        background-position-x: -750px;
+    }
+
+    #container-testimonials{
+        width: 90%;
+    }
+    /* END Testimonials */
 
     /* Footer */
     #newsletter{
@@ -291,7 +323,8 @@ body{
 
     /* Hero Section */
     .hero-text h2{
-        font-size: 1.3rem;
+        width: 80%;
+        font-size: 1.1rem;
     }
 
     .breadcrumb a{
@@ -303,10 +336,48 @@ body{
     }
     /* END Hero Section */
 
-    /* Destination */
-    .header-destination > h2{
+    /* Tentang Kami */
+    .image-about{
+        width: 110%;
+    }
+
+    .about-text{
+        padding: 0;
+    }
+
+    .about-text > h2{
+        width: 100%;
+        text-align: center;
+    }
+    /* END Tentang Kami */
+
+    /* Testimonials */
+    .testimonials{
+        background-position-x: -750px;
+        padding-top: 70px;
+    }
+
+    #container-testimonials{
+        width: 100%;
+    }
+
+    #swiper-slides{
+        padding: 20px;
+    }
+
+    #swiper-slides > p{
+        font-size: 0.8rem;
+    }
+
+    .text-box > h4{
+        font-size: 1.1rem;
+    }
+    /* END Testimonials */
+
+    /* Media Partner */
+     .header-media-partners > h2{
         font-size: 1.4rem;
     }
-    /* END Destination */
+    /* END Media Partner */
 }
 /* END HandPhone */

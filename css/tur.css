@@ -113,7 +113,7 @@ body{
 /* HERO SECTION */
 .hero-section{
     width: 100%;
-    background-image: url(../img/hero2.png);
+    background-image: url(../img/hero3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -238,11 +238,5 @@ body{
         background-image: none;
     }
     /* END Hero Section */
-
-    /* Footer */
-    #sosial-media-footer{
-        margin: 20px 0;
-    }
-    /* END Footer */
 }
 /* END HandPhone */
